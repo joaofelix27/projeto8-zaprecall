@@ -12,12 +12,29 @@ body {
     justify-content: center;
     align-items: center;
 }
+.telaFlashcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topoFlashcards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .raioGrande {
     height: 161px;
     width: 136px;
     margin-top: 148px;
     margin-bottom: 30px;
     
+}
+.raioPequeno {
+    height: 60px;
+    width: 52px; 
+    margin-right: 20px;
 }
 .titleInicial{
     font-family: Righteous;
