@@ -1,42 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&family=Righteous&display=swap');
+
 body {
     font-family: 'Righteous', cursive;
     font-family: 'Recursive', sans-serif;
     background-color: #FB6B6B;
-    
 }
-.telaInicial{
+* {
+    box-sizing: border-box;
+}
+.telaInicial {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.telaFlashcards{
+
+.telaFlashcards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.topoFlashcards{
+
+.topoFlashcards {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
 }
+
 .raioGrande {
     height: 161px;
     width: 136px;
     margin-top: 148px;
     margin-bottom: 30px;
-    
+
 }
+
 .raioPequeno {
     height: 60px;
-    width: 52px; 
+    width: 52px;
     margin-right: 20px;
 }
-.titleInicial{
+
+.titleInicial {
     font-family: Righteous;
     font-size: 36px;
     font-weight: 400;
@@ -46,6 +55,7 @@ body {
     color: #FFFFFF;
 
 }
+
 .botaoInicial {
     margin-top: 45px;
     height: 54px;
@@ -60,4 +70,50 @@ body {
     color: #D70900;
     border: 1px solid #D70900;
     box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.baseInicial {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px 0px #0000000D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baseInicial h1 {
+    box-shadow: 0px -4px 6px 0px #0000000D;
+    font-family: Recursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+}
+
+.perguntas {
+    padding: 0 20px;
+    margin-top:25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.perguntas h1 {
+    font-family: Recursive;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.play1{
+    font-size: 35px;
+    visibility: visible;
 }

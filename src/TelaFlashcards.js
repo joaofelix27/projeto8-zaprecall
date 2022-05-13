@@ -1,12 +1,33 @@
-import raioPequeno from "./assets/images/logo-pequeno.png"
+import Topo from "./Topo"
+import Base from "./Base"
+import Perguntas from "./Perguntas"
+
 export default function TelaFlashcards() {
+    const perguntas =[
+        {
+            nome: "teste1"
+        },
+        {
+            nome: "teste2"
+        },
+        {
+            nome: "teste3"
+        },
+        {
+            nome: "teste4"
+        }
+    
+    ]
     return (
         <div className="telaFlashcards">
-            <div className="topoFlashcards">
-                <img className="raioPequeno" src={raioPequeno} />
-                <h1 className="titleInicial">ZapRecall</h1>
-            </div>
-
+            <Topo />
+            {perguntas.map((pergunta,index) =>(
+                <Perguntas
+                index1={index+1}
+                />
+            )
+                )}
+            <Base />
         </div>
     )
 
