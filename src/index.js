@@ -1,7 +1,6 @@
-import react from "react-dom";
-function teste (){
-    alert(eae)
-}
-teste()
-const root=document.querySelector(".root")
-ReactDOM.render("eae",root)
+import ReactDOM from "react-dom";
+import "./assets/reset.css";
+import "./assets/style.css";
+import App from "./App";
+
+ReactDOM.render(<App />, document.querySelector(".root"));
