@@ -1,6 +1,8 @@
-import telaInicial from "./telaInicial";
+import TelaInicial from "./TelaInicial";
 export default function App () {
     return(
-        <telaInicial />
+        <>
+        <TelaInicial />
+        </>
     )
 }
