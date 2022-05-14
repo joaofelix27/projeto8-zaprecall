@@ -2,9 +2,11 @@ import React from 'react'
 import Topo from "./Topo"
 import Base from "./Base"
 import Perguntas from "../Perguntas/Perguntas"
+import BaseFinal from './BaseFinal';
 
 export default function TelaFlashcards() {
     const [contador, setContador] = React.useState(0);
+    const [certas, setCertas] = React.useState(0);
     const perguntas =[
         {
             Q: "O que é JSX?",
@@ -47,21 +49,33 @@ export default function TelaFlashcards() {
     ]
     function aumentarQtd() {
 		setContador(contador+1);
+        console.log(contador)
 	}
+    function aumentarQtd1() {
+		setCertas(certas+1);
+        console.log(certas)
+	}
+    const arrayNovo=[...perguntas]
+    arrayNovo.sort( () => Math.random() - 0.5) 
     return (
         <div className="telaFlashcards">
             <Topo />
-            {perguntas.map((pergunta,index) =>(
+            {arrayNovo.map((pergunta,index) =>(
                 <Perguntas
                 index1={index+1}
                 Q={pergunta.Q}
                 R={pergunta.R}
                 setContador={aumentarQtd}
                 contador={contador}
+                setCertas={aumentarQtd1}
+                certas={certas}
                 />
             )
-                )}
-            <Base total={perguntas.length} contador={contador} />
+                )} 
+                {
+                    contador    !== arrayNovo.length ? <Base total={perguntas.length} contador={contador} /> : <BaseFinal certas={certas} total={perguntas.length} contador={contador}/>
+                }
+           
         </div>
     )
 
