@@ -6,9 +6,11 @@ body {
     font-family: 'Recursive', sans-serif;
     background-color: #FB6B6B;
 }
+
 * {
     box-sizing: border-box;
 }
+
 .telaInicial {
     display: flex;
     flex-direction: column;
@@ -21,6 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .topoFlashcards {
@@ -95,7 +98,7 @@ body {
 
 .perguntas {
     padding: 0 20px;
-    margin-bottom:25px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,6 +116,22 @@ body {
     letter-spacing: 0em;
     text-align: left;
 }
+
+.verde {
+    text-decoration-line: line-through;
+    color: #2FBE34;
+}
+
+.laranja {
+    text-decoration-line: line-through;
+    color: #FF922E;
+}
+
+.vermelho {
+    text-decoration-line: line-through;
+    color: #FF3030;
+}
+
 .perguntasVerso {
     display: flex;
     flex-direction: column;
@@ -127,6 +146,7 @@ body {
     padding: 15px 12px;
     position: relative;
 }
+
 .perguntasVerso h1 {
     font-family: Recursive;
     font-size: 18px;
@@ -136,41 +156,47 @@ body {
     text-align: left;
     color: #333333;
 }
-.play1{
+
+.play1 {
     font-size: 30px;
     visibility: visible;
 }
-.check{
+
+.check {
     font-size: 30px;
     visibility: visible;
     pointer-events: none;
-    color:  #2FBE34;
+    color: #2FBE34;
 
 }
-.closed{
+
+.closed {
     font-size: 30px;
     pointer-events: none;
-   color:  #FF3030;
+    color: #FF3030;
 
 }
-.question{
+
+.question {
     font-size: 30px;
     pointer-events: none;
-    color:   #FF922E;
-
+    color: #FF922E;
 }
-.setinha{
+
+.setinha {
     width: 30px;
     position: absolute;
     bottom: 15px;
     right: 15px;
 }
+
 .statusResposta {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.statusResposta button{
+
+.statusResposta button {
     word-break: normal;
     height: 37px;
     width: 85px;
@@ -185,14 +211,17 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
-.statusResposta :nth-child(1){
-   background-color: #FF3030;
+
+.statusResposta :nth-child(1) {
+    background-color: #FF3030;
 }
-.statusResposta :nth-child(2){
-    background-color:  #FF922E;
+
+.statusResposta :nth-child(2) {
+    background-color: #FF922E;
 
 }
-.statusResposta :nth-child(3){
-    background-color:#2FBE34;
+
+.statusResposta :nth-child(3) {
+    background-color: #2FBE34;
 
 }

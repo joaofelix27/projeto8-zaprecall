@@ -7,7 +7,7 @@ export default function Perguntaverso(props) {
     return (
         <>
          {
-             resposta === false ? <PerguntaReal setResposta={setResposta} Q={props.Q} />  : <Resposta setIcon={props.setIcon} setClasse={props.setClasse} setPergunta={props.setPergunta} R={props.R}/>
+             resposta === false ? <PerguntaReal setResposta={setResposta} Q={props.Q} />  : <Resposta setIcon={props.setIcon} setCor={props.setCor} setClasse={props.setClasse} setPergunta={props.setPergunta} R={props.R}/>
         }
         </>
     )
