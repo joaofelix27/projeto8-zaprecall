@@ -95,7 +95,7 @@ body {
 
 .perguntas {
     padding: 0 20px;
-    margin-top:25px;
+    margin-bottom:25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +113,67 @@ body {
     letter-spacing: 0em;
     text-align: left;
 }
+.perguntasVerso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 131px;
+    width: 299px;
+    border-radius: 5px;
+    background-color: #FFFFD4;
+    box-shadow: 0px 4px 5px 0px #00000026;
+    margin-bottom: 25px;
+    word-break: break-all;
+    padding: 15px 12px;
+    position: relative;
+}
+.perguntasVerso h1 {
+    font-family: Recursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+}
 .play1{
     font-size: 35px;
     visibility: visible;
+}
+.setinha{
+    width: 30px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.statusResposta {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.statusResposta button{
+    word-break: normal;
+    height: 37px;
+    width: 85px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 0px 3px;
+    font-family: Recursive;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.statusResposta :nth-child(1){
+   background-color: #FF3030;
+}
+.statusResposta :nth-child(2){
+    background-color:  #FF922E;
+
+}
+.statusResposta :nth-child(3){
+    background-color:#2FBE34;
+
 }

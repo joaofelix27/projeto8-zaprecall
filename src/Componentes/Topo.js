@@ -1,4 +1,4 @@
-import raioPequeno from "./assets/images/logo-pequeno.png"
+import raioPequeno from "../assets/images/logo-pequeno.png"
 export default function Topo () {
     return (
             <div className="topoFlashcards">

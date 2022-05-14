@@ -1,4 +1,4 @@
-import raioGrande from "./assets/images/image 1.png";
+import raioGrande from "../assets/images/image 1.png";
 export default function TelaInicial ({setTela}) {
     return (
     <div className="telaInicial">

@@ -1,6 +1,6 @@
 import Topo from "./Topo"
 import Base from "./Base"
-import Perguntas from "./Perguntas/Perguntas"
+import Perguntas from "../Perguntas/Perguntas"
 
 export default function TelaFlashcards() {
     const perguntas =[
