@@ -1,19 +1,15 @@
-import setinha from "../assets/images/setinha2.png"
-import React from 'react-dom'
+import React from 'react'
+import Resposta from "./Resposta";
+import PerguntaReal from "./PerguntaReal";
+
 export default function Perguntaverso(props) {
-    // const [resposta, setResposta] = React.useState(props.Q);
+    const [resposta, setResposta] = React.useState(false);
     return (
-        //    <div className="perguntasVerso">
-        //     <h1>{props.Q}</h1>
-        //     <img src={setinha} onClick={() => setResposta(props.R)}  className="setinha"></img>
-        //     </div >
-        <div className="perguntasVerso">
-            <h1>{props.R}</h1>
-            <div className="statusResposta">
-                <button>Não lembrei</button>
-                <button>Quase não lembrei</button>
-                <button>Zap!</button>
-            </div>
-        </div >
+        <>
+         {
+             resposta === false ? <PerguntaReal setResposta={setResposta} Q={props.Q} />  : <Resposta R={props.R}/>
+        }
+        </>
     )
+       
 }
