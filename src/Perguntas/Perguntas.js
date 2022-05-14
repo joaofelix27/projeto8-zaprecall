@@ -9,7 +9,7 @@ export default  function Perguntas(props){
     return (
         <>
          {
-             pergunta === false ? <Pergunta cor={cor} setPergunta={setPergunta} icon={icon} classe={classe} index={props.index1}/>  : <Perguntaverso contador={props.contador} setContador={props.setContador} certas={props.certas} setCertas={props.setCertas} setCor={setCor} Q={props.Q} setClasse={setClasse} setIcon={setIcon} setPergunta={setPergunta} index={props.index1} R={props.R}/>
+             pergunta === false ? <Pergunta cor={cor} setPergunta={setPergunta} icon={icon} classe={classe} index={props.index1}/>  : <Perguntaverso setQtdIcones={props.setQtdIcones} setCertas={props.setCertas} setContador={props.setContador} setCor={setCor} Q={props.Q} setClasse={setClasse} setIcon={setIcon} setPergunta={setPergunta} index={props.index1} R={props.R}/>
         }
         </>
     )

@@ -20,7 +20,15 @@ export default function BaseFinal(props) {
         }
         <h1 className='texto'>
             {props.contador}/{props.total} CONCLUÍDOS
-        </h1>
+        </h1>   
+        <div className="iconesFooter">
+        {props.novosItens.map((item) =>(
+                <ion-icon  class="question" name={item}></ion-icon> 
+            )
+                )} 
+
+        </div>
+        
 
     </div>
 

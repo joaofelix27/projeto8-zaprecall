@@ -11,6 +11,7 @@ export default function Resposta(props) {
                     props.setClasse("closed");
                     props.setCor("vermelho");
                     props.setContador();
+                    props.setQtdIcones("close-circle");
                 }  
              } >Não lembrei</button>
              <button onClick={function(){
@@ -19,6 +20,8 @@ export default function Resposta(props) {
                     props.setClasse("question");
                     props.setCor("laranja");
                     props.setContador();
+                    props.setCertas();
+                    props.setQtdIcones("help-circle");
                 }  
              } >Quase não lembrei</button>
              <button onClick={function(){
@@ -28,6 +31,7 @@ export default function Resposta(props) {
                     props.setCor("verde");
                     props.setContador();
                     props.setCertas();
+                    props.setQtdIcones("checkmark-circle");
                 }  
              } >Zap!</button>
             </div>
