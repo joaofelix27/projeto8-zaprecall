@@ -137,8 +137,27 @@ body {
     color: #333333;
 }
 .play1{
-    font-size: 35px;
+    font-size: 30px;
     visibility: visible;
+}
+.check{
+    font-size: 30px;
+    visibility: visible;
+    pointer-events: none;
+    color:  #2FBE34;
+
+}
+.closed{
+    font-size: 30px;
+    pointer-events: none;
+   color:  #FF3030;
+
+}
+.question{
+    font-size: 30px;
+    pointer-events: none;
+    color:   #FF922E;
+
 }
 .setinha{
     width: 30px;

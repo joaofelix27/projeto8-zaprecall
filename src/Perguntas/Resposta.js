@@ -4,9 +4,24 @@ export default function Resposta(props) {
          <div className="perguntasVerso">
             <h1>{props.R}</h1>
             <div className="statusResposta">
-                <button>Não lembrei</button>
-                <button>Quase não lembrei</button>
-                <button>Zap!</button>
+                <button onClick={function(){
+                    props.setIcon("close-circle")
+                    props.setPergunta(false)
+                    props.setClasse("closed")
+                }  
+             } >Não lembrei</button>
+             <button onClick={function(){
+                    props.setIcon("help-circle")
+                    props.setPergunta(false)
+                    props.setClasse("question")
+                }  
+             } >Quase não lembrei</button>
+             <button onClick={function(){
+                    props.setIcon("checkmark-circle")
+                    props.setPergunta(false)
+                    props.setClasse("check")
+                }  
+             } >Zap!</button>
             </div>
         </div >
         </>
