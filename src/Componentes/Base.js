@@ -1,8 +1,8 @@
-export default function Base () {
+export default function Base (props) {
     return (
         <div className="baseInicial">
             <h1>
-            OLÁAA
+            {props.contador}/{props.total} CONCLUÍDOS
             </h1>
             
         </div>

@@ -1,8 +1,10 @@
+import React from 'react'
 import Topo from "./Topo"
 import Base from "./Base"
 import Perguntas from "../Perguntas/Perguntas"
 
 export default function TelaFlashcards() {
+    const [contador, setContador] = React.useState(0);
     const perguntas =[
         {
             Q: "O que é JSX?",
@@ -43,6 +45,9 @@ export default function TelaFlashcards() {
         }
     
     ]
+    function aumentarQtd() {
+		setContador(contador+1);
+	}
     return (
         <div className="telaFlashcards">
             <Topo />
@@ -51,10 +56,12 @@ export default function TelaFlashcards() {
                 index1={index+1}
                 Q={pergunta.Q}
                 R={pergunta.R}
+                setContador={aumentarQtd}
+                contador={contador}
                 />
             )
                 )}
-            <Base />
+            <Base total={perguntas.length} contador={contador} />
         </div>
     )
 
