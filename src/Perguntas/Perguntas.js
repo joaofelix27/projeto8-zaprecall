@@ -1,6 +1,6 @@
 import React from 'react'
 import Pergunta from "./Pergunta";
-import Perguntaverso from "./Perguntaverso";
+import Resposta from "./Resposta";
 export default  function Perguntas(props){
     const [pergunta, setPergunta] = React.useState(false);
     const [icon,setIcon] = React.useState("play-outline");
@@ -9,7 +9,7 @@ export default  function Perguntas(props){
     return (
         <>
          {
-             pergunta === false ? <Pergunta cor={cor} setPergunta={setPergunta} icon={icon} classe={classe} index={props.index1}/>  : <Perguntaverso setQtdIcones={props.setQtdIcones}  setCertas={props.setCertas} setContador={props.setContador} setCor={setCor} Q={props.Q} setClasse={setClasse} setIcon={setIcon} setPergunta={setPergunta} index={props.index1} R={props.R}/>
+             pergunta === false ? <Pergunta cor={cor} setPergunta={setPergunta} icon={icon} classe={classe} index={props.index1}/>  : <Resposta setQtdIcones={props.setQtdIcones}  setCertas={props.setCertas} setContador={props.setContador} setCor={setCor} Q={props.Q} setClasse={setClasse} setIcon={setIcon} setPergunta={setPergunta} index={props.index1} R={props.R}/>
         }
         </>
     )
