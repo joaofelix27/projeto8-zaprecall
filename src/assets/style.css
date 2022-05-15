@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 160px;
 }
 
 .topoFlashcards {
@@ -76,6 +76,8 @@ body {
 }
 
 .baseInicial {
+    padding-top: 10px;
+    padding-bottom: 8px;
     position: fixed;
     bottom: 0;
     height: 70px;
@@ -83,8 +85,21 @@ body {
     background-color: #FFFFFF;
     box-shadow: 0px -4px 6px 0px #0000000D;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+.baseInicial h1 {
+    box-shadow: 0px -4px 6px 0px #0000000D;
+    font-family: Recursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+}
+.iconesFooter{
+    margin-top: 4px;
 }
 
 .baseFinal {
@@ -101,7 +116,7 @@ body {
 
 .topoBase {
     display: flex;
-    margin-top: 16px;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
 }
@@ -129,17 +144,6 @@ body {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
-}
-
-
-
-.baseInicial h1 {
-    box-shadow: 0px -4px 6px 0px #0000000D;
-    font-family: Recursive;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #333333;
 }
 
 .perguntas {
@@ -182,7 +186,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 131px;
+    height: 170px;
     width: 299px;
     border-radius: 5px;
     background-color: #FFFFD4;

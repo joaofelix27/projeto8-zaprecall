@@ -56,8 +56,8 @@ export default function TelaFlashcards() {
 		setCertas(certas+1);
         console.log(certas)
 	}
-    function aumentarQtdIcones(novoitem) {
-		const novoItens = [...itens, novoitem];
+    function aumentarQtdIcones(novoitem,novaClasse) {
+		const novoItens = [...itens, {icone:novoitem, classe:novaClasse}];
 		setItens(novoItens);
         console.log(itens)
 	}
@@ -80,7 +80,7 @@ export default function TelaFlashcards() {
             )
                 )} 
                 {
-                    contador !== arrayNovo.length ? <Base novosItens={itens} total={perguntas.length} contador={contador} /> : <BaseFinal novosItens={itens} certas={certas} total={perguntas.length} contador={contador}/>
+                    contador !== arrayNovo.length ? <Base novosItens={itens}  total={perguntas.length} contador={contador} /> : <BaseFinal novosItens={itens}  certas={certas} total={perguntas.length} contador={contador}/>
                 }
            
         </div>

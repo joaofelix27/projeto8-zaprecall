@@ -23,7 +23,7 @@ export default function BaseFinal(props) {
         </h1>   
         <div className="iconesFooter">
         {props.novosItens.map((item) =>(
-                <ion-icon  class="question" name={item}></ion-icon> 
+                <ion-icon  class={item.classe} name={item.icone}></ion-icon> 
             )
                 )} 
 
